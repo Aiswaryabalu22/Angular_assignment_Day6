@@ -22,8 +22,8 @@ export class AddProductComponent implements OnInit {
 
   }
 
-  createProduct(id: number, name:string, price:number, stock:string){
-    this.p.Pid = id; this.p.Pname=name; this.p.Price=price; this.p.Stock=stock;
+  createProduct(){
+    //this.p.Pid = id; this.p.Pname=name; this.p.Price=price; this.p.Stock=stock;
     console.log(JSON.stringify(this.p));    
     localStorage.setItem(
       'products', 
